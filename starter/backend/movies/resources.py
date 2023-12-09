@@ -8,7 +8,6 @@ movies = {
     "789": {"title": "A Quiet Place", "description": "Scary monsters"},
 }
 
-
 class Movies(MethodView):
     def get(self, movie_id):
         if movie_id is None:
