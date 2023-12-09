@@ -10,7 +10,6 @@ movies = {
 }
 
 
-
 class Movies(MethodView):
     def get(self, movie_id):
         if movie_id is None:
