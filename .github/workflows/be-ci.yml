@@ -74,7 +74,7 @@ jobs:
 
       - name: Run tests
         run: |
-          pipenv run 
+          pipenv run test
           
   build:
     name: Build & push image
