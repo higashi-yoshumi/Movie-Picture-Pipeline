@@ -39,6 +39,7 @@ jobs:
       - name: Run ESLint
         run: |
           npm run lint -- --fix
+
   test:
     name: Frontend Testing
     runs-on: ubuntu-latest
