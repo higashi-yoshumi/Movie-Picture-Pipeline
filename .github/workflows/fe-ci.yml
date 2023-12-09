@@ -39,19 +39,19 @@ jobs:
         run: |
           npm run lint -- --fix
   test:
-  name: Frontend Testing
-  runs-on: ubuntu-latest
-  defaults:
-    run:
-      working-directory: ./starter/frontend
-  steps:
-    - name: Checkout code
-      uses: actions/checkout@v3
+    name: Frontend Testing
+    runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: ./starter/frontend
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v3
 
-    - name: Install dependencies
-      run: |
-        npm install
+      - name: Install dependencies
+        run: |
+          npm install
 
-    - name: Run tests
-      run: |
-        npm test
+      - name: Run tests
+        run: |
+          npm test
